@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.DescribeCough">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continue_describe_cough"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Do any of these describe your cough?"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/worsethannewnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="It's new or worse than normal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView68"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <CheckBox
+        android:id="@+id/noneOfTheseDescribeCough"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="None of these"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/worsethannewnormal"
+        app:layout_constraintTop_toBottomOf="@+id/threeormoreCoughs" />
+
+    <CheckBox
+        android:id="@+id/coughingContinously"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="I'm coughing continuously for more than an\nhour "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/worsethannewnormal"
+        app:layout_constraintTop_toBottomOf="@+id/worsethannewnormal" />
+
+    <CheckBox
+        android:id="@+id/threeormoreCoughs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="I'm having 3 or more coughing fits in a day"
+        app:layout_constraintStart_toStartOf="@+id/coughingContinously"
+        app:layout_constraintTop_toBottomOf="@+id/coughingContinously" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

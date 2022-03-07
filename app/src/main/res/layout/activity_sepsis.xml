@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.Sepsis">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startchck"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Start a new symptom check"
+        android:textAllCaps="false"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView68"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/textView68"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calltext"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Call 112"
+        android:textAllCaps="false"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/startchck"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/startchck"
+        app:layout_constraintTop_toBottomOf="@+id/startchck" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="You may have something called sepsis,\na rare but serious complication of an\ninfection.\n\nVisit the nearest hospital/emergency\ndepartment now or call an ambulance\nif you feel very ill, or are experiencing\nor more of the following:\n\n- Extreme chills and shivering\n- Struggling to stay awake\n-Breathing very fast even when resting\n-Not peeing for a whole day"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView68"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/closeimage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

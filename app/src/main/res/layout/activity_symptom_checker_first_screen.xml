@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Checker.SymptomCheckerFirstScreen">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startCheck"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Hi, I'm your healthcare assistant. Search your symptoms and let me help you find the right care, so you can feel better faster"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/startCheck"
+        app:layout_constraintStart_toStartOf="@+id/startCheck"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

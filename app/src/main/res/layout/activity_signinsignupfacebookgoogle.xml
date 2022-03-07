@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signinsignupfacebookgoogle">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button4"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/googlecolor"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue with Google"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:cornerRadius="19dp" 
+        app:icon="@drawable/google"
+        app:iconSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/loginbtnfacebookgoogle"
+        app:layout_constraintStart_toStartOf="@+id/loginbtnfacebookgoogle"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtnfacebookgoogle" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginbtnfacebookgoogle"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/signupbutton"
+        app:layout_constraintStart_toStartOf="@+id/signupbutton"
+        app:layout_constraintTop_toBottomOf="@+id/signupbutton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbutton"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="989dp"
+        android:layout_height="406dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Health Frontline"
+        android:textColor="@color/deepbluedark"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Diagnosis"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Speak to a doctor"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Book Appointments"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:srcCompat="@drawable/roundelipse" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6"
+        app:srcCompat="@drawable/roundelipse" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:srcCompat="@drawable/roundelipse" />
+</androidx.constraintlayout.widget.ConstraintLayout>

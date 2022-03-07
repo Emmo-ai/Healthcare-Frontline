@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.Doyouhaveanyofthese">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn_doyouhaveanyofthese"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Do you have any of these symptoms"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/coughCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Cough"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <CheckBox
+        android:id="@+id/feverishCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Feeling hot or feverish"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/coughCheckbox"
+        app:layout_constraintTop_toBottomOf="@+id/coughCheckbox" />
+
+    <CheckBox
+        android:id="@+id/difficultyBreathingCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Difficulty breathing"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/feverishCheckbox"
+        app:layout_constraintTop_toBottomOf="@+id/feverishCheckbox" />
+
+    <CheckBox
+        android:id="@+id/lossofSmellCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Loss or change to your sense of smell\nor taste"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/difficultyBreathingCheckbox"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyBreathingCheckbox" />
+
+    <CheckBox
+        android:id="@+id/noneOfThese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="None of these"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/lossofSmellCheckbox"
+        app:layout_constraintTop_toBottomOf="@+id/lossofSmellCheckbox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

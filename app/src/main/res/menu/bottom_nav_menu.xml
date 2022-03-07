@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:iconTint="@color/lightgreen"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+<!--
+    <item
+        android:id="@+id/stats"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_statistics"
+        android:title=""
+        app:showAsAction="ifRoom" />
+-->
+
+    <item
+        android:id="@+id/appointment"
+        android:enabled="true"
+        android:icon="@drawable/appointments"
+        android:title="Appointments"
+        android:iconTint="@color/lightgreen"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/diagnosis"
+        android:enabled="true"
+        android:icon="@drawable/dignosis"
+        android:title="Diagnosis"
+        android:iconTint="@color/lightgreen"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/account"
+        android:enabled="true"
+        android:icon="@drawable/profile"
+        android:title="Account"
+        android:iconTint="@color/lightgreen"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

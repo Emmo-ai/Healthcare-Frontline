@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/County__item_constrain_layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="24dp"
+    android:layout_marginEnd="24dp"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/globalcovidbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Country Name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand"
+        android:text="Confirmed"
+        android:textColor="@android:color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView56"
+        app:layout_constraintStart_toStartOf="@+id/country_name"
+        app:layout_constraintTop_toTopOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:fontFamily="@font/quicksand"
+        android:text="Recovered"
+        android:textColor="@android:color/black"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView57"
+        app:layout_constraintStart_toEndOf="@+id/textView49"
+        app:layout_constraintTop_toTopOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand"
+        android:text="Deaths"
+        android:textColor="@android:color/black"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/country_name" />
+
+    <TextView
+        android:id="@+id/country_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView49"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/increased_new_number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/redcolor"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/country_c"
+        app:layout_constraintStart_toStartOf="@+id/country_c"
+        app:layout_constraintTop_toBottomOf="@+id/country_c" />
+
+    <TextView
+        android:id="@+id/country_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView56"
+        app:layout_constraintStart_toStartOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/new_recovered1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/greenlight"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/country_r"
+        app:layout_constraintStart_toStartOf="@+id/country_r"
+        app:layout_constraintTop_toBottomOf="@+id/country_r" />
+
+    <TextView
+        android:id="@+id/country_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text=""
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/textView57"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/increased_death1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/country_d"
+        app:layout_constraintStart_toStartOf="@+id/country_d"
+        app:layout_constraintTop_toBottomOf="@+id/country_d" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

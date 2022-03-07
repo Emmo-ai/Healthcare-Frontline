@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "304970932158",
+    "project_id": "healthcare-frontline",
+    "storage_bucket": "healthcare-frontline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304970932158:android:cf9aa10df914216198a3ef",
+        "android_client_info": {
+          "package_name": "com.emmocodeworks.healthcarefrontline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304970932158-d601398qvqmadnpnv2ktjt2pthiasvin.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCanC2lgsW33AJ7HPs5XLRlzO7C95RMEx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304970932158-d601398qvqmadnpnv2ktjt2pthiasvin.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

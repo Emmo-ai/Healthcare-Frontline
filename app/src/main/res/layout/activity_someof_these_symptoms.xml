@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.SomeofTheseSymptoms">
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startnewSymptomcheck_someofthessyptomes"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Start a new symptom check"
+        android:textAllCaps="false"
+        android:textColor="@color/deepbluedark"
+        android:textSize="16sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView65"
+        app:layout_constraintStart_toStartOf="@+id/textView65"
+        app:layout_constraintTop_toBottomOf="@+id/textView65" />
+
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Some of the symptoms you mentioned need urgent medical attention. You should call the COVID-19 hotlines immediately."
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView35" />
+
+    <TextView
+        android:id="@+id/CALL112"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Call 112"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/startnewSymptomcheck_someofthessyptomes"
+        app:layout_constraintStart_toStartOf="@+id/startnewSymptomcheck_someofthessyptomes"
+        app:layout_constraintTop_toBottomOf="@+id/startnewSymptomcheck_someofthessyptomes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

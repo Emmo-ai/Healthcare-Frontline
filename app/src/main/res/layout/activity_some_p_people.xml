@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.SomePPeople">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continue_somePeople"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView67"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Risk factors : Do you have any of the following?"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/heartRelatedCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Heart related dieseases"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <CheckBox
+        android:id="@+id/diabetes_CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Diabetes"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/heartRelatedCheckbox"
+        app:layout_constraintTop_toBottomOf="@+id/heartRelatedCheckbox" />
+
+    <CheckBox
+        android:id="@+id/parkinsonsCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Neurological disorder such as Parkinson's\nor multiple sclerosis"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/diabetes_CheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/diabetes_CheckBox" />
+
+    <CheckBox
+        android:id="@+id/kidney_lung_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Kidney, lung or liver disease"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/parkinsonsCheckbox"
+        app:layout_constraintTop_toBottomOf="@+id/parkinsonsCheckbox" />
+
+    <CheckBox
+        android:id="@+id/noneOfThese_somePeopleCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="None of these"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/kidney_lung_checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/kidney_lung_checkBox" />
+</androidx.constraintlayout.widget.ConstraintLayout>

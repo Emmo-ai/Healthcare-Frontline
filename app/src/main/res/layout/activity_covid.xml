@@ -1,0 +1,332 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="HomeFragmentActivities.CovidActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/Countryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text=""
+        android:textColor="@color/deepbluedark"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/consultadoctor"
+        app:layout_constraintStart_toStartOf="@+id/consultadoctor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/consultadoctor"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:rippleColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/covid19"
+        app:layout_constraintEnd_toStartOf="@+id/diagnose"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView9">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/redlinesc" />
+
+            <TextView
+                android:id="@+id/confirmed_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/redcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmed_increased_cases"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/confirmed_increased_cases" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_mediumm"
+                android:text="Confirmed"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/confirmed_numbers"
+                app:layout_constraintTop_toBottomOf="@+id/confirmed_numbers" />
+
+            <TextView
+                android:id="@+id/confirmed_increased_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=""
+                android:fontFamily="@font/quicksand_light"
+                android:textColor="@color/redcolor"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/confirmed_increased_cases"
+                app:layout_constraintEnd_toStartOf="@+id/confirmed_increased_cases"
+                app:layout_constraintTop_toTopOf="@+id/confirmed_increased_cases"
+                app:srcCompat="@drawable/arrowup" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/diagnose"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+         android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:rippleColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/consultadoctor"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/consultadoctor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView79"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/greenline" />
+
+            <TextView
+                android:id="@+id/total_recovered_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text=""
+                android:textColor="@color/greenlight"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/recovered_increasing_numbers"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/recovered_increasing_numbers" />
+
+            <TextView
+                android:id="@+id/recovered_increasing_numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=""
+                android:fontFamily="@font/quicksand_light"
+                android:textColor="@color/greenlight"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_mediumm"
+                android:text="Recovered"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/total_recovered_numbers"
+                app:layout_constraintTop_toBottomOf="@+id/total_recovered_numbers" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/recovered_increasing_numbers"
+                app:layout_constraintEnd_toStartOf="@+id/recovered_increasing_numbers"
+                app:layout_constraintTop_toTopOf="@+id/recovered_increasing_numbers"
+                app:srcCompat="@drawable/arrowupgreen" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/covid19"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+         android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:rippleColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/consultadoctor"
+        app:layout_constraintStart_toStartOf="@+id/consultadoctor">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagedView19"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/greyline" />
+
+            <TextView
+                android:id="@+id/total_death_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:text=""
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/death_increased_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/death_increased_number" />
+
+            <TextView
+                android:id="@+id/death_increased_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text=""
+                android:fontFamily="@font/quicksand_light"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_mediumm"
+                android:text="Deaths"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/total_death_number"
+                app:layout_constraintTop_toBottomOf="@+id/total_death_number" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/death_increased_number"
+                app:layout_constraintEnd_toStartOf="@+id/death_increased_number"
+                app:layout_constraintTop_toTopOf="@+id/death_increased_number"
+                app:srcCompat="@drawable/arrowupdeath" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/covid129"
+        android:layout_width="160dp"
+        android:layout_height="170dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/diagnose"
+        app:layout_constraintStart_toStartOf="@+id/diagnose"
+        app:rippleColor="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageViewd19"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/activecasesblueline" />
+
+            <TextView
+                android:id="@+id/active_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:fontFamily="@font/quicksand_bold"
+                android:textColor="@color/bluelight"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_mediumm"
+                android:text="Active Cases"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/active_cases"
+                app:layout_constraintTop_toBottomOf="@+id/active_cases" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="491dp" />
+
+    <TextView
+        android:id="@+id/global_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Global"
+        app:layout_constraintBottom_toBottomOf="@+id/Countryname"
+        app:layout_constraintEnd_toEndOf="@+id/diagnose"
+        app:layout_constraintTop_toTopOf="@+id/Countryname" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_covidActivity"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="39dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:indeterminateTint="@color/deepbluedark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink">#ffcbcb</color>
+    <color name="lightgreen">#70adb5</color>
+    <color name="othergreen">#407088</color>
+    <color name="deepbluedark">#132743</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#D5D5D5</color>
+    <color name="googlecolor">#5383EC</color>
+    <color name="logoutbutn">#F2F3F2</color>
+    <color name="redcolor">#FF5252</color>
+    <color name="greenlight">#42B800</color>
+    <color name="bluelight">#3184FF</color>
+</resources>

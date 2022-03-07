@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.HaveYouExperiencedAnyofthese">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueHaveYouExperiencedAnyofthese"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noneoftheseHaveYouExperiencedAnyofThese" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Have you experienced any of these symptoms recently?"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/severeDiziness"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/severeDiziness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Severe dizziness, to the point where I feel like\nI'm going to pass out"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <CheckBox
+        android:id="@+id/notPeeing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Not peeing in the past 8 hours"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/severeDiziness"
+        app:layout_constraintTop_toBottomOf="@+id/blueLips" />
+
+    <CheckBox
+        android:id="@+id/usuallyCold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Usually cold, pale or grey skin\n(mottled skin)"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/severeDiziness"
+        app:layout_constraintTop_toBottomOf="@+id/severeDiziness" />
+
+    <CheckBox
+        android:id="@+id/blueLips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Blue lips or face"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/usuallyCold"
+        app:layout_constraintTop_toBottomOf="@+id/usuallyCold" />
+
+    <CheckBox
+        android:id="@+id/breathingFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Breathing very fast, even when resting"
+        app:layout_constraintStart_toStartOf="@+id/notPeeing"
+        app:layout_constraintTop_toBottomOf="@+id/notPeeing"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/hadAfitorFainted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Had a fit or fainted"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/breathingFast"
+        app:layout_constraintTop_toBottomOf="@+id/breathingFast" />
+
+    <CheckBox
+        android:id="@+id/noneoftheseHaveYouExperiencedAnyofThese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="None of these"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/hadAfitorFainted"
+        app:layout_constraintTop_toBottomOf="@+id/hadAfitorFainted" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

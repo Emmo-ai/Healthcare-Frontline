@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.FirstCovidScreen">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueBtn_firstcovidScreen"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noneOfthesE" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Do you have any of these symptoms?"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/closeimage" />
+
+    <CheckBox
+        android:id="@+id/chestPain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Severe chest pain or chest pain that isn't\ngoing away"
+        app:layout_constraintStart_toStartOf="@+id/textView68"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <CheckBox
+        android:id="@+id/slurredSpeech1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:textSize="16sp"
+        android:text="Slurred speech, or numbness or weakness on\none side of the face or body"
+        app:layout_constraintStart_toStartOf="@+id/chestPain"
+        app:layout_constraintTop_toBottomOf="@+id/swellingOfEyes" />
+
+    <CheckBox
+        android:id="@+id/difficultyBreathing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Severe difficulty breathing "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/chestPain"
+        app:layout_constraintTop_toBottomOf="@+id/chestPain" />
+
+    <CheckBox
+        android:id="@+id/swellingOfEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:textSize="16sp"
+        android:text="Sudden swelling of the eyes, lips mouth,\nthroat or tongue"
+        app:layout_constraintStart_toStartOf="@+id/difficultyBreathing"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyBreathing" />
+
+    <CheckBox
+        android:id="@+id/rashwontgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:textSize="16sp"
+        android:text="A rash that doesn't go away when you  press\nit"
+        app:layout_constraintStart_toStartOf="@+id/slurredSpeech1"
+        app:layout_constraintTop_toBottomOf="@+id/slurredSpeech1" />
+
+    <CheckBox
+        android:id="@+id/noneOfthesE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="None of these"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/rashwontgo"
+        app:layout_constraintTop_toBottomOf="@+id/rashwontgo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

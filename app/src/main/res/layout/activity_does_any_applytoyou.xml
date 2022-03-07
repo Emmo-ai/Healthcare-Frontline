@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="CovidCheckerActivities.DoesAnyApplytoyou">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continue_doesanyapplyToYou"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:backgroundTint="@color/othergreen"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="19dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="1067dp"
+        android:layout_height="448dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signupsignin" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Do you have any of these apply to you?"
+        android:textColor="@color/deepbluedark"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView42" />
+
+    <CheckBox
+        android:id="@+id/organTransplant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Have had an organ transplant"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView67"
+        app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+    <CheckBox
+        android:id="@+id/boneTransplant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Have had a bone transplant"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/organTransplant"
+        app:layout_constraintTop_toBottomOf="@+id/organTransplant" />
+
+    <CheckBox
+        android:id="@+id/kidneyDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Kidney disease and on dialysis"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/boneTransplant"
+        app:layout_constraintTop_toBottomOf="@+id/boneTransplant" />
+
+    <CheckBox
+        android:id="@+id/chemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="Currently having chemotherapy\n or radiotherapy"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/kidneyDisease"
+        app:layout_constraintTop_toBottomOf="@+id/kidneyDisease" />
+
+    <CheckBox
+        android:id="@+id/noneofThese_DoesAnyApplytoYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand_mediumm"
+        android:text="None of these"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/chemo"
+        app:layout_constraintTop_toBottomOf="@+id/chemo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
